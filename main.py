@@ -323,7 +323,7 @@ def draw_corner_kerbs(track_surface, corners, track_width):
 def draw_single_kerb():
     tile_height = KERB_TILE_HEIGHT # Move outside
     tile_width = KERB_TILE_WIDTH # Move outside
-    kerb_tile = pygame.image.load(KERB_TILE)
+    kerb_tile = pygame.image.load(str(KERB_TILE))
     kerb = pygame.Surface((tile_width, tile_height), pygame.SRCALPHA)
     kerb.blit(kerb_tile, (0, 0))
     return kerb
